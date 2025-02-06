@@ -1,0 +1,223 @@
+
+header {
+    min-height: 20vh;
+    background-color:#F5BD00;
+    width: 74vw;
+    margin: 0;
+    border: 0;
+    padding: 0 13vw 0 13vw;
+    box-shadow: 0px 5px 8px #888888;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    z-index: 100;
+    }
+    .logo-und-datum{
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+    }
+        .logo-header{
+            height: 100%;
+            
+            }
+        .datum-header{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+            .datum-header-jahr{
+                color: #7400BE;            
+                font-size: 3rem;
+                line-height: 1;
+                }
+            .datum-header-tag{
+                color: #7400BE;
+                font-size:2rem ;
+                line-height: 0.85;
+                }
+    .menü-elemente{
+        color: #7400BE;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    .burger-menü{
+       position: relative;
+        fill: #7400BE;
+    }
+    
+    .dropdown-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-align: center;
+        background-color: #F5BD00;
+        border: 6px solid #7400BE;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-radius: 10px;
+        z-index: 100;
+    }
+
+    .burger-menü:hover{
+        fill: #735BFF;
+        cursor: pointer;
+    }
+
+   .burger-menü > button:focus + .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger-menü:hover .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .burger-menü-button{
+        background: #F5BD00;
+        all:unset;
+        border: none;
+        height: 100%;
+    }
+    
+    .dropdown-item{
+        font-size: 2rem;
+        text-decoration: none;
+        right: 0;
+        padding: 0 1vw;
+    }
+    .menü-elemente:hover, .dropdown-item:hover , .logo-header:hover{
+        color: #735BFF;
+        fill:#735BFF;
+    }
+
+    .dropdown-extra{
+        display: none;
+    }
+
+    @media(max-width: 1900px){
+        .menü-elemente{
+            display: none;
+        }
+        .dropdown-extra{
+            display: block;
+        }
+    @media(max-width: 1500px){
+       .logo-header{
+        min-height: 60px;
+        height:7.5vw;
+      
+       }
+        .datum-header-jahr{
+        font-size: 4.5vw;
+        }
+
+        .datum-header-tag{
+            font-size: 3vw;
+        }
+        .logo-und-datum{
+            gap: 2vw;
+        }
+       } 
+    }
+
+.startseite {
+    min-height: 80vh;
+    display: flex;
+    margin-top: 20vh;
+    flex-wrap: nowrap;
+    }
+    .bg-text-startseite{
+        background-color: #F5BD00;
+        min-height: 100%;
+        width: 50%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4vh;
+        }
+        .überschrift-startseite{
+            margin: 4vh 4vh 0 13vw;
+            font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+        }
+        .text-startseite{
+            margin: 0 4vw 0 13vw;
+        }
+        .startseite-buttons-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0 6vw 4vh 13vw;
+            flex-wrap: wrap;
+        }
+    
+    .bild-startseite {
+        width: 50%;
+        background-image: url(Images/Bilder-Startseite/Psychedelisches\ Berg-Bild.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        }
+        .logo{
+            margin: 1vh;
+            }
+        .datum-1{
+            color: #F5BD00;
+            font-size: 300%;
+            margin: 1vh;
+            margin-bottom: 0;
+            }
+        .datum-2{
+            color: #F5BD00;
+            margin: 1vh;
+            margin-top: 0;
+            font-size: 3rem;
+            }
+
+     @media(max-width: 1900px){
+        .startseite{
+            min-height: none;
+        }
+    }
+
+    @media(max-width: 1500px){
+        .startseite{
+            flex-direction: column;
+            justify-content: center;
+            min-height: auto;
+        }
+        .bg-text-startseite, .bild-startseite{
+            width: 100%;
+            height: 50%;
+        }
+        .bild-startseite{
+            order: 0;
+            height: 80vh;
+        }
+        .bg-text-startseite{
+            order: 1;
+        }
+        .text-startseite{
+            margin-right: 13vw;
+        }
+        .startseite-buttons-container{
+            margin: 0 0 4vh 0;
+        }
+    }
+    
+

@@ -1,0 +1,120 @@
+body, html, ul, li, main,h1,h2,h3,h4, a, p{
+    margin: 0;
+    padding: 0;
+    }
+html{
+    font-size: 150%;
+}
+/*fonts*/
+    .burghi{
+        font-family: "burghi-variable", sans-serif;
+        }
+    .bebas-rounded {
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+    .bebas-pro {
+        font-family: "bebas-neue-pro", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+    .purple{
+        color: #7400BE;
+    }
+    .yellow{
+        color: #F5BD00;
+    }
+
+/*Titles*/
+    h3{
+        font-size: 3rem;
+    }
+    h4{
+        font-size: clamp(1.3rem, 4vw, 2.5rem);
+    }
+    p{
+        font-size: clamp(1rem, 3vw, 1.5625rem);
+    }
+    .p{
+        font-size: clamp(1rem, 3vw, 1.5625rem);
+    }
+
+    .gefüllter-button-lila{
+        width: fit-content;
+        height: fit-content;
+        list-style-type: none;
+        background-color: #7400BE;
+        padding: 1vh 4.5vw 1vh;
+        text-align: center;
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1rem, 1.8vw, 1.5625rem);
+        color:#F5BD00;
+        border: none;
+        border-radius: 70px;
+        text-decoration: none;
+        border: #7400BE;
+        border-style: solid;
+        border-width: 3px;
+        cursor:pointer;
+        margin: 1vw 1vw 1vw 0;
+    }
+    .gefüllter-button-lila:hover{
+        background-color: #735BFF;
+        }
+    
+    .rahmen-button-lila{
+        width: fit-content;
+        height: fit-content;
+        list-style-type: none;
+        background-color: #F5BD00;
+        padding: 1vh 3vw 1vh;
+        text-align: center;
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1rem, 1.8vw, 1.5625rem);
+        color:#7400BE;
+        border: #7400BE;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 70px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .rahmen-button-lila:hover{
+        border: #735BFF;
+        border-style: solid;
+        border-width: 3px;
+        color: #735BFF;
+    }
+
+    .rahmen-button-gelb{
+        width: fit-content;
+        height: fit-content;
+        list-style-type: none;
+        background-color: #7400BE;
+        padding: 1vh 1.5vw 1vh;
+        text-align: center;
+        font-family: "bebas-neue-rounded", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(1rem, 1.8vw, 1.5625rem);
+        color:#F5BD00;
+        border: #F5BD00;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 70px;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 1vw; 
+    }
+    .rahmen-button-gelb:hover{
+        background-color: #735BFF;
+    }
+
+   
