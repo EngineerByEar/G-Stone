@@ -112,7 +112,7 @@ header {
         }
     @media(max-width: 1500px){
        .logo-header{
-        min-height: 60px;
+        min-height: 50px;
         height:5vw;
       
        }
