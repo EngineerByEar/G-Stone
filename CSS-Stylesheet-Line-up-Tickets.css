@@ -72,3 +72,8 @@
                 scroll-margin-top: 20vh;
             }
         }
+        @media(max-width:500px){
+            .tickets-container, .plakat-line-up{
+                width: 65vw;
+            }
+        }
