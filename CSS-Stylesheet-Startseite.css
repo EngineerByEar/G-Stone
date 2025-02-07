@@ -64,7 +64,6 @@ header {
         border-right-width: 1px;
         border-radius: 10px;
         z-index: 100;
-        margin-top: 1vh;
     }
 
     .burger-menü:hover{
