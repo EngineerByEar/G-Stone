@@ -130,7 +130,7 @@ header {
        
     @media(max-width: 500px){
         .logo-header{
-            min-height: 0;
+            min-height: 0px;
             height: 10px;
         }
         .burger-menü-button{
