@@ -127,6 +127,13 @@ header {
             gap: 2vw;
         }
        } 
+       
+    @media(max-width: 450px){
+        .logo-header{
+            min-height: 50px;
+            height: 5vw;
+        }
+    }
     }
 
 .startseite {
