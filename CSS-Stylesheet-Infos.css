@@ -92,7 +92,8 @@
 
     @media(max-width:1250px){
         .info{
-            min-height: auto;
+            min-height: fit-content;
+            height: auto;
         }
         .side, .l, .r{
             display: none;

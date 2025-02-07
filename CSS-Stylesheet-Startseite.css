@@ -1,6 +1,6 @@
 
 header {
-    min-height: 20vh;
+    height: 20vh;
     background-color:#F5BD00;
     width: 74vw;
     margin: 0;
@@ -64,6 +64,7 @@ header {
         border-right-width: 1px;
         border-radius: 10px;
         z-index: 100;
+        margin-top: 1vh;
     }
 
     .burger-menü:hover{
@@ -89,7 +90,7 @@ header {
     }
     
     .dropdown-item{
-        font-size: clamp(1rem, 2.5vh, 2rem);
+        font-size: clamp(1.25rem, 4vw, 2rem);
         text-decoration: none;
         right: 0;
         padding: 0 1vw;
@@ -113,13 +114,14 @@ header {
     @media(max-width: 1500px){
        .logo-header{
         width: 45vw;
+        max-width: 400px;
        }
         .datum-header-jahr{
-        font-size: 6vw;
+        font-size: clamp(5px, 5vw, 100px);
         }
 
         .datum-header-tag{
-            font-size: 4vw;
+            font-size: clamp(5px, 3vw, 80px);
         }
         .logo-und-datum{
             gap: 2vw;
@@ -134,11 +136,12 @@ header {
             font-size: 4vw;
         }
         .burger-menü-button{
-            width: 10vw;
+            width: clamp(20px, 8vw, 40px);
         }
-        .header{
+        header{
             padding: 0 10vw 0 10vw;
             height: 15vh;
+            width: 80vw;
         }
     }
     }
@@ -217,7 +220,6 @@ header {
         }
         .bg-text-startseite, .bild-startseite{
             width: 100%;
-            height: 50%;
         }
         .bild-startseite{
             order: 0;
@@ -225,6 +227,7 @@ header {
         }
         .bg-text-startseite{
             order: 1;
+            min-height: auto;
         }
         .text-startseite{
             margin-right: 13vw;
@@ -245,8 +248,10 @@ header {
             font-size: 7vw;
         }
         .startseite{
-            height: 85vh;
             margin-top: 15vh;
+        }
+        .bild-startseite{
+            height: 85vh;
         }
     }
     
