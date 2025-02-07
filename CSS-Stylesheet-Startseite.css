@@ -126,7 +126,7 @@ header {
         }
        } 
        
-    @media(max-width: 500px){
+    @media(max-width: 630px){
         .datum-header-jahr{
             font-size: 6vw;
         }
@@ -138,6 +138,7 @@ header {
         }
         .header{
             padding: 0 10vw 0 10vw;
+            height: 15vh;
         }
     }
     }
@@ -233,7 +234,7 @@ header {
         }
     }
 
-    @media(max-width:500px){
+    @media(max-width:630px){
         .logo{
             width: 75vw;
         }
@@ -242,6 +243,10 @@ header {
         }
         .datum-2{
             font-size: 7vw;
+        }
+        .startseite{
+            height: 85vh;
+            margin-top: 15vh;
         }
     }
     
