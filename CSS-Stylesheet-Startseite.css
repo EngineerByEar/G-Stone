@@ -89,7 +89,7 @@ header {
     }
     
     .dropdown-item{
-        font-size: 2rem;
+        font-size: clamp(1rem, 2.5vh, 2rem);
         text-decoration: none;
         right: 0;
         padding: 0 1vw;
