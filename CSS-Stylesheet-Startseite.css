@@ -115,11 +115,11 @@ header {
         width: 50vw;
        }
         .datum-header-jahr{
-        font-size: 4.5vw;
+        font-size: 6vw;
         }
 
         .datum-header-tag{
-            font-size: 3vw;
+            font-size: 4vw;
         }
         .logo-und-datum{
             gap: 2vw;
