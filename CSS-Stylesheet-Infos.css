@@ -1,5 +1,4 @@
 .info {
-    min-height: 90vh;
     background-color: #7400BE;
     display: flex;
     flex-direction: row;
@@ -92,7 +91,7 @@
 
     @media(max-width:1250px){
         .info{
-            min-height: fit-content;
+            min-height: 55vh;
             height: auto;
         }
         .side, .l, .r{
