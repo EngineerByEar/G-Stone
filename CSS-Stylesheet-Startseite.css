@@ -133,6 +133,12 @@ header {
             min-height: 0px;
             height: 6vh;
         }
+        .datum-header-jahr{
+            font-size: 3.5vw;
+        }
+        .datum-header-tag{
+            font-size: 2.5vw;
+        }
         .burger-menü-button{
             height: 5vh;
         }
