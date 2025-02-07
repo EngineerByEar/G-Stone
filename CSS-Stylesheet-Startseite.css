@@ -112,7 +112,7 @@ header {
         }
     @media(max-width: 1500px){
        .logo-header{
-        width: 50vw;
+        width: 45vw;
        }
         .datum-header-jahr{
         font-size: 6vw;
