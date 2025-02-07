@@ -131,7 +131,7 @@ header {
     @media(max-width: 500px){
         .logo-header{
             min-height: 0px;
-            height: 5vh;
+            height: 7.5vh;
         }
         .burger-menü-button{
             height: 5vh;
