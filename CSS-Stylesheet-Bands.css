@@ -98,4 +98,9 @@
             width: 50vw;
         }
     }
+    @media(max-width:500px){
+        .band-foto{
+            width: 65vw;
+        }
+    }
     
