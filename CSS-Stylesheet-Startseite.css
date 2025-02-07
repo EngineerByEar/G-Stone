@@ -112,7 +112,7 @@ header {
         }
     @media(max-width: 1500px){
        .logo-header{
-        width: 40vw;
+        width: 50vw;
        }
         .datum-header-jahr{
         font-size: 4.5vw;
@@ -128,13 +128,13 @@ header {
        
     @media(max-width: 500px){
         .datum-header-jahr{
-            font-size: 3.5vw;
+            font-size: 6vw;
         }
         .datum-header-tag{
-            font-size: 2.5vw;
+            font-size: 4vw;
         }
         .burger-menü-button{
-            width: 4vw;
+            width: 10vw;
         }
         .header{
             padding: 0 10vw 0 10vw;
@@ -238,10 +238,10 @@ header {
             width: 75vw;
         }
         .datum-1{
-            font-size: 15vw;
+            font-size: 10vw;
         }
         .datum-2{
-            font-size: 13vw;
+            font-size: 7vw;
         }
     }
     
