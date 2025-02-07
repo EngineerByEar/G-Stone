@@ -133,6 +133,9 @@ header {
             min-height: 50px;
             height: 5vw;
         }
+        .burger-menü-button{
+            height: 15vh;
+        }
     }
     }
 
