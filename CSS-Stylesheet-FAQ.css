@@ -13,12 +13,13 @@
         width: 72vw;
         border: 3.5px solid #7400BE;
         border-radius: 75px;
-        height: 6vh;
+        height: fit-content;
+        width: fit-content;
         display:inline-flex;
         align-items: center;
         justify-content: flex-start;
         margin: 2.5vh 0 2.5vh;
-        padding: 0;
+        padding: 5px 10px 2px 0;
         }
         
         .button-answer{
