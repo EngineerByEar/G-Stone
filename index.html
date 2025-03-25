@@ -31,10 +31,10 @@
                 <nav class="dropdown-menu">
                     <a href="#Tickets" class="dropdown-item heading-font main-color-1 dropdown-extra">Tickets</a>
                     <a href="#Line-Up" class="dropdown-item heading-font main-color-1 dropdown-extra">Line-Up</a>
-                    <a href="" class="dropdown-item heading-font main-color-1 dropdown-extra">Camping</a>
+                    <a href="" class="dropdown-item heading-font main-color-1 dropdown-extra Keinverweis">Camping</a>
                     <a href="#infos" class="dropdown-item heading-font main-color-1">Info</a>
-                    <a href="" class="dropdown-item heading-font main-color-1">Anreise</a>
-                    <a href="" class="dropdown-item heading-font main-color-1">Parken</a>
+                    <a href="" class="dropdown-item heading-font main-color-1 Keinverweis">Anreise</a>
+                    <a href="" class="dropdown-item heading-font main-color-1 Keinverweis">Parken</a>
                     <a href="FAQ.html" class="dropdown-item heading-font main-color-1">FAQ</a>
                     <a href="Terms.html" class="dropdown-item heading-font main-color-1">Terms</a>
                     <a href="#impressum" class="dropdown-item heading-font main-color-1">Impressum</a>
@@ -65,7 +65,18 @@
             <script>
                  window.onload = function() {
                     alert("Diese Website ist ein Prototyp. Einige Informationen können sich noch ändern oder werden erst hinzugefügt");
-                };
+                    };
+                    
+                    document.addEventListener("DOMContentLoaded", () => {
+                    document.querySelectorAll('.Keinverweis').forEach(item => {
+                    item.addEventListener('click', (event) => {
+                    event.preventDefault(); // Verhindert mögliche Standardaktionen
+                     alert('Diese Seite ist noch nicht verfügbar!');
+            });
+        });
+    });
+</script>
+                
             </script>
         </main>
         <section title="Info" class="info" id="infos">
@@ -140,10 +151,6 @@
                     fill="#F5BD00"><path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
                 </a>
                 <div class="bands-carousel-item-track">
-                    <div class="band band-side band-l">
-                        <img src="Images/Bilder-Bands/Decontraer.jpg" alt="Foto der Band Decontraer" class="band-foto">
-                        <a class="heading-font main-color-2 bandname">Decontraer</a>
-                    </div>
                     <div class="band band-side band-ml">
                         <img src="Images/Bilder-Bands/AHARA.jpg" alt="Foto der Band Ahara" class="band-foto">
                         <a class="heading-font main-color-2 bandname">Ahara</a>
@@ -161,12 +168,8 @@
                         <a class="heading-font main-color-2 bandname-zulang">Yellow-Furniture</a>
                     </div>
                     <div class="band band-hidden">
-                        <img src="Images/Bilder-Bands/DJI_0003.JPG" alt="Foto der Band ..." class="band-foto">
-                        <a class="heading-font main-color-2 bandname">Mistery Band</a>
-                    </div>
-                    <div class="band band-hidden">
-                        <img src="Images/Bilder-Bands/DJI_0003.JPG" alt="Foto der Band ..." class="band-foto">
-                        <a class="heading-font main-color-2 bandname-zulang">Mistery Band2</a>
+                        <img src="Images/LOGO/LOGO-Gelb.svg" alt="Foto der Band ..." class="band-foto">
+                        <a class="heading-font main-color-2 bandname">8 more Bands to be Announced</a>
                     </div>
                 </div>
                 <a class="bands-button-right"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" 
@@ -231,19 +234,19 @@
                 <div title="Impressum" class="impressum" id="impressum">
                     <h4 class="text-font">Impressum</h4>
                     <ul>
-                        <li class="impressum-items text-font p">Namen des Vereins/des Betreibers</li>
-                        <li class="impressum-items text-font p">Geografische Anschrift</li>
-                        <li class="impressum-items text-font p">Tel d. Betreibers:</li>
-                        <li class="impressum-items text-font p">E-Mail:</li>
+                        <li class="impressum-items text-font p">Kunstverein Rote Brennessel</li>
+                        <li class="impressum-items text-font p">Vorderschneeberg 144, 5630 Bad Hofgastein, Austria</li>
+                        <li class="impressum-items text-font p">06803127774</li>
+                        <li class="impressum-items text-font p">organisation@gstonerock.at</li>
                         <li class="impressum-items text-font p">Firmenbuchnummer & Firmenbuchgericht</li>
                         <li class="impressum-items text-font p">Zuständige Aufsichtsbehörde</li>
                         <li class="impressum-items text-font p">Zugehörige Kammer</li>
                         <li class="impressum-items text-font p">Berufsbezeichnung und Mitgliedsstaat</li>
                         <li class="impressum-items text-font p">Hinweis auf gewerbliche oder berufsrechtliche Vorschriften</li>
                         <li class="impressum-items text-font p">UID</li>
-                        <li class="impressum-items text-font p">Standort derGewerbeberechtigung falls nicht im Firmenbuch eingetragen</li>
-                        <li class="impressum-items text-font p">Haftungsausschluss für externe Links</li>
-                        <li class="impressum-items text-font p">Hinweis bzgl. Änderungen von Programm und Preis</li>
+                        <li class="impressum-items text-font p">Vorderschneeberg 144, 5630 Bad Hofgastein, Austria</li>
+                        <li class="impressum-items text-font p">Wir haften nicht für Inhalte auf externen Links.</li>
+                        <li class="impressum-items text-font p">Wir behalten uns das Recht vor Änderungen an Ticket Preisen und dem Programm vorzunehmen.</li>
                     </ul>
                 </div>
                 <div title="Social" class="social">
