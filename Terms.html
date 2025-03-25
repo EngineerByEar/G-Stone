@@ -33,13 +33,27 @@
                 <button class="burger-menü-button"><svg class="burger-menü-button" xmlns="http://www.w3.org/2000/svg" width="49.999" height="37.999" viewBox="0 0 49.999 37.999"><g transform="translate(-1706 -31)"><path d="M-8736-115a4,4,0,0,1-4-4,4,4,0,0,1,4-4h42a4,4,0,0,1,4,4,4,4,0,0,1-4,4Zm0-15a4,4,0,0,1-4-4,4,4,0,0,1,4-4h42a4,4,0,0,1,4,4,4,4,0,0,1-4,4Zm0-15a4,4,0,0,1-4-4,4,4,0,0,1,4-4h42a4,4,0,0,1,4,4,4,4,0,0,1-4,4Z" transform="translate(10446 184)"/></g></svg></button>
                 <nav class="dropdown-menu">
                     <a href="index.html#infos" class="dropdown-item bebas-rounded purple">Info</a>
-                    <a href="." class="dropdown-item bebas-rounded purple">Anreise</a>
-                    <a href="." class="dropdown-item bebas-rounded purple">Parken</a>
+                    <a href="." class="dropdown-item bebas-rounded purple Keinverweis">Anreise</a>
+                    <a href="." class="dropdown-item bebas-rounded purple Keinverweis">Parken</a>
                     <a href="FAQ.html" class="dropdown-item bebas-rounded purple">FAQ</a>
                     <a href="Terms.html" class="dropdown-item bebas-rounded purple aktuell-ausgewählt-terms">Terms</a>
                     <a href="#impressum" class="dropdown-item bebas-rounded purple">Impressum</a>
                 </nav>
             </div>
+            <script>
+                window.onload = function() {
+                   alert("Diese Website ist ein Prototyp. Einige Informationen können sich noch ändern oder werden erst hinzugefügt");
+                   };
+                   
+                   document.addEventListener("DOMContentLoaded", () => {
+                   document.querySelectorAll('.Keinverweis').forEach(item => {
+                   item.addEventListener('click', (event) => {
+                   event.preventDefault(); // Verhindert mögliche Standardaktionen
+                    alert('Diese Seite ist noch nicht verfügbar!');
+           });
+       });
+   });
+</script>
         </header> 
         <section id="startseite-subpages-terms" title="Startseite-Subpages" class="startseite-subpages">
             <div class="startseite-subpages-flex-container">
