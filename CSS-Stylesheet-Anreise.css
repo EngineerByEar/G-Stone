@@ -24,16 +24,6 @@
     width: 50vw;
 }
 
-@media(max-width: 1000px){
-    .Karte{
-        height: 40vh;
-        width: 80vw;
-    }
-
-    .Öffentliche-Anreise-Bahnhöfe{
-        flex-direction: column;
-    }
-}
 .Öffentliche-Anreise{
     display: flex;
     justify-content: center;
@@ -58,4 +48,40 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 2.5vh;
+}
+
+.Private-Anreise{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 5vh 13vw 5vh 13vw;
+    background-color:  #7400BE;
+}
+
+.Parken{
+    margin-bottom: -2.5vh;
+}
+
+#Öffentliche-Anreise{
+    scroll-margin-top: 20vh;
+}
+
+#Private-Anreise{
+    scroll-margin-top: 20vh;
+}
+
+@media(max-width: 1000px){
+    .Karte{
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .Öffentliche-Anreise-Bahnhöfe{
+        flex-direction: column;
+    }
+    .Öffentliche-Anreise-Bahnhof{
+        width: 100%;
+    }
 }
