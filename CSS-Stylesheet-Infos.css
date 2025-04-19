@@ -86,7 +86,7 @@
     }
 
     #infos{
-        scroll-margin-top: 15vh;
+        scroll-margin-top: 20vh;
     }
 
     @media(max-width:1250px){
