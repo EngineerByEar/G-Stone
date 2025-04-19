@@ -55,13 +55,13 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 5vh;
+    gap: 2.5vh;
     padding: 5vh 13vw 5vh 13vw;
     background-color:  #7400BE;
 }
 
-.Parken{
-    margin-bottom: -2.5vh;
+.Überschrift-Anreise{
+    margin-bottom: +2.5vh;
 }
 
 #Öffentliche-Anreise{
