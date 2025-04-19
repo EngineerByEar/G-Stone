@@ -1,6 +1,7 @@
 .sponsoring{
     background-color: #7400BE;
     padding:3vh 0 3vh 0 ;
+    display: none;
     }
     .partner-seite-flex-container{
         display: flex;

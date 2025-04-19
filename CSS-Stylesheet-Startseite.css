@@ -101,9 +101,6 @@ header {
     .dropdown-extra{
         display: none;
     }
-    .Keinverweis{
-    
-    }
 
     @media(max-width: 1900px){
         .menü-elemente{

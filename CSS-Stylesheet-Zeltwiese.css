@@ -25,24 +25,37 @@
             flex-grow: 0;
     }
 
-    .Zeltwiese-Infos{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .Zeltwiese-Infos-Text{
+ .Zeltwiese-Infos{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        padding: 5vh 5vw 0 13vw;
-        gap: 5vh;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5vh 13vw 5vh 13vw;
+        gap: 2.5vh;
     }
 
-    .Zeltwiese-Infos-Bild{
-        width: 50vw;
-        height: auto;
+.Zeltwiese-Infos-Überschrift{
+        margin-top: +2.5vh;;
+}
+
+    #Wasser-Strom, #Sanitäranlagen-Müll, #Verbotene-Gegenstände, #Zeltwiese{
+        scroll-margin-top: 20vh;
     }
+
+@media(max-width:630px){
+    #Wasser-Strom, #Sanitäranlagen-Müll, #Verbotene-Gegenstände, #Zeltwiese{
+        scroll-margin-top: 15vh;
+    }
+}
+@media(max-width:1450px){
+    .Zeltwiese-Infos-Bild{
+        display: none;
+    }
+
+    .Zeltwiese-Infos-Text{
+        padding: 5vh 13vw 0 13vw;
+    }
+}
 
 @media(max-width:1200px){
     .Zeltwiese-Überblick-Bild{

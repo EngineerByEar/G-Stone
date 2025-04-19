@@ -25,6 +25,7 @@ footer {
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-around;
+            gap: 2vh;
         }
             .social-links{
                 display: flex;
