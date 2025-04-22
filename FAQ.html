@@ -145,7 +145,7 @@
                         <p class="bebas-pro purple">Nein, es werden keine Zelte zur Verfügung gestellt.</p>
                     </div>
                 </li>
-                <li>
+            <!--     <li>
                     <div class="frage" tabindex="0">
                         <a class="button-answer">
                             <svg xmlns="http://www.w3.org/2000/svg" height="4vh" viewBox="0 -960 960 960" width="4vh" 
@@ -157,8 +157,30 @@
                     <div class="antwort">
                         <p class="bebas-pro purple">Ja, man kann mit einem Wohnmobil anreisen und den Campingplatz verwenden.</p>
                     </div>
-                </li>
+                </li> -->
             </ul>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                const buttons = document.querySelectorAll(".button-answer");
+
+                  buttons.forEach(button => {
+                   button.addEventListener("click", function(e) {
+                 const frage = e.target.closest(".frage");
+                    const antwort = frage.nextElementSibling;
+
+                 // Toggle Sichtbarkeit
+                 if (antwort.style.display === "block") {
+                     antwort.style.display = "none";
+                     button.style.transform = "rotate(0deg)";
+                 } else {
+                     antwort.style.display = "block";
+                     button.style.transform = "rotate(90deg)";
+                 }
+        });
+    });
+});
+               
+            </script>
         </main>
 
         <footer title="Impressum & Social">

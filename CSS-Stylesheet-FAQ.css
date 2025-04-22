@@ -28,15 +28,15 @@
             padding: 0;
         }
         
-        .frage:focus ~ .antwort{
+        /* .frage:focus ~ .antwort{
             display:block;
         }
         .frage:focus > .button-answer{
         transform: rotate(90deg)
-        }
-        .frage:focus{
+        } */
+       /* .frage:focus{
             margin: 2.5vh 0 0 0;
-        }
+        } */
        
 
 
@@ -47,4 +47,4 @@
 
     .aktuell-ausgewählt-faq{
         color: #735BFF;
-    }
+    } 
