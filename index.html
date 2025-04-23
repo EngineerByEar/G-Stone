@@ -88,7 +88,7 @@
                         <img src="Images/Bilder-Info-Karten/Aktivitäten-Bild.webp" 
                         class="carousel-karte-bild" alt="2 Personen in Badekleidung stoßen an">
                         <h4 class="heading-font main-color-2 karte-überschrift">Aktivitäten</h4>
-                        <p class=" text-font main-color-2 karte-text">Die Aktivitäten beim G-Stone Rock Festival bieten ein vielseitiges Erlebnis: Entspannte Stunden am Badesee oder Erkundungstouren in die umliegende Natur. Dank Kooperationen mit lokalen Betrieben erwartet dich ein abwechslungsreiches Zusatzprogramm.</p>
+                        <p class=" text-font main-color-2 karte-text">Die Aktivitäten beim G-Stone Rock Festival bieten ein vielseitiges Erlebnis: Entspannte Stunden am Badesee oder Erkundungstouren in der umliegenden Natur. Dank Kooperationen mit lokalen Betrieben erwartet dich ein abwechslungsreiches Zusatzprogramm.</p>
                         <a title="Button Mehr Infos" class="rahmen-button-gelb karte-button" onclick="alert('Diese Seite ist bald verfügbar!')">Mehr Infos</a>
                     </div>
                     <div class="card main" title="Location">
@@ -101,7 +101,7 @@
                         <img src="Images/Bilder-Info-Karten/Gastronomie - Neu.webp" 
                             class="carousel-karte-bild" alt="Bild einem erfrischenden Getränk">
                         <h4 class="heading-font main-color-2 karte-überschrift">Gastronomie</h4>
-                        <p class=" text-font main-color-2 karte-text">Kulinarische Vielfalt trifft auf Nachhaltigkeit: Das G-Stone Rock Festival setzt auf regionale Zutaten und ein umfangreiches veganes Angebot, das von herzhaften Klassikern bis zu kreativen Spezialitätenreicht – Genuss mit Verantwortung.</p>
+                        <p class=" text-font main-color-2 karte-text">Kulinarische Vielfalt trifft auf Nachhaltigkeit: Das G-Stone Rock Festival setzt auf regionale Zutaten und ein umfangreiches veganes Angebot, das von herzhaften Klassikern bis hin zu kreativen Spezialitäten reicht.</p>
                     </div>
                     <div class="card hidden">
                         <img src="Images/Bilder-Info-Karten/Nachhaltigkeit-Bild.webp" 
@@ -113,7 +113,7 @@
                         <img src="Images/Bilder-Info-Karten/Gasteiner Tal - Neu.webp" 
                             class="carousel-karte-bild" alt="Bild des Gasteiner Tals">
                         <h4 class="heading-font main-color-2 karte-überschrift">Gasteiner Tal</h4>
-                        <p class=" text-font main-color-2 karte-text">Eingebettet in die imposante Natur der Salzburger Alpen, erstreckt sich das Gasteinertal. Geformt von den höchsten Grasbergen der Ostalpen, umrandet von den 3.000er der Hohen Tauern und heißen wohltuenden Thermalquellen, vereint Gastein die fazinierende Kraft von Berg und Wasser.</p>
+                        <p class=" text-font main-color-2 karte-text">Eingebettet in die imposante Natur der Salzburger Alpen, erstreckt sich das Gasteinertal. Geformt von den höchsten Grasbergen der Ostalpen, umrandet von den 3.000ern der Hohen Tauern und heißen wohltuenden Thermalquellen, vereint Gastein die faszinierende Kraft von Berg und Wasser.</p>
                         <a title="Button Mehr Infos" class="rahmen-button-gelb karte-button" href="https://www.gastein.com/" target="_blank">Mehr Infos</a>
                     </div>
                     <a class="button-right"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" 
@@ -140,6 +140,24 @@
                     <a class="heading-font main-color-2 rahmen-button-gelb tickets-preise-button Keinverweis">-10€</a>
                 </div>
             </div>
+            <script>
+                window.addEventListener("DOMContentLoaded", () => {
+                  const plakat = document.querySelector(".plakat-line-up");
+                  const tickets = document.querySelector(".tickets-container");
+                
+                  function angleichen() {
+                    if (window.innerWidth <= 1000) {
+                      const plakatBreite = plakat.offsetWidth;
+                      tickets.style.width = `${plakatBreite}px`;
+                    } else {
+                      tickets.style.width = ""; // zurücksetzen im Desktop
+                    }
+                  }
+                
+                  angleichen();
+                  window.addEventListener("resize", angleichen);
+                });
+                </script>
         </section>
         <div id="bands" title="Bands" class="bands">
             <div class="bands-carousel-container">
