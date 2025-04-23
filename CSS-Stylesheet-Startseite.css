@@ -178,7 +178,7 @@ header {
     
     .bild-startseite {
         width: 50%;
-        background-image: url(Images/Bilder-Startseite/Trip.jpg) ;
+        background-image: url(Images/Bilder-Startseite/Trip.webp) ;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
