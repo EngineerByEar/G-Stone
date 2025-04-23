@@ -22,8 +22,7 @@
 }
     .card{
         width: 27vw;
-        min-height: auto;
-        max-height: 80vh;
+        height: fit-content;
         background-color: #7400BE;
         border: #F5BD00;
         border-style: solid;
