@@ -80,8 +80,7 @@
             }
         }
         @media(max-width:500px){
-            .tickets-container{
-            }
+           
             .plakat-line-up{
                 width: auto;
                 min-height:auto;
