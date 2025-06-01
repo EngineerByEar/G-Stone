@@ -29,11 +29,12 @@
     .preis-und-button{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: flex-start;
     }
         .tickets-überschrift{
          font-size: clamp(1.7rem, 6vw, 3rem);  
+         padding-top: 1vh;
         }
 
         .tickets-angebote{
@@ -46,6 +47,8 @@
             min-width: auto;
             margin-left: -1vw;
             margin-right: 0;
+            margin-bottom: 1vh;
+            margin-top: 0;
         }
 
         #Line-Up{
@@ -55,7 +58,11 @@
         #Tickets{
             scroll-margin-top: 30vh;
         }
+    .kleingedrucktes{
+        font-size: clamp(0.5rem, 1.5vw, 0.75rem);
+        padding-bottom: 1vh;
 
+    }
         @media(max-width:1000px){
             .plakat-line-up{
                 min-height: 50vh;
